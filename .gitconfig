@@ -1,0 +1,29 @@
+[user]
+	name = Garrett Wayne
+	email = garrett@postal.io
+
+[push]
+	# https://git-scm.com/docs/git-config#git-config-pushdefault
+	default = current
+[core]
+	excludesfile = /Users/garrettwayne/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/garrettwayne/.stCommitMsg
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	# Commit working directory as Work In Progress
+	wip = !git add -A && git commit -avm "WIP"
+  # Undo last commit
+	undo = reset --soft HEAD~1
+[pull]
+	rebase = false

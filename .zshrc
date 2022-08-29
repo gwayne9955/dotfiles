@@ -8,15 +8,15 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH="$HOME/.oh-my-zsh"
 
 # Minimal - Theme Settings
-export MNML_INSERT_CHAR="$"
-export MNML_PROMPT=(mnml_git mnml_keymap)
-export MNML_RPROMPT=('mnml_cwd 20')
+# export MNML_INSERT_CHAR="$"
+# export MNML_PROMPT=(mnml_git mnml_keymap)
+# export MNML_RPROMPT=('mnml_cwd 20')
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="minimal"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -46,10 +46,10 @@ ZSH_THEME="minimal"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -78,7 +78,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(artisan git)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +108,29 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/garrettwayne/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/garrettwayne/Documents/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/garrettwayne/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/garrettwayne/Documents/google-cloud-sdk/completion.zsh.inc'; fi
+
+# export COMPOSE_PROJECT_NAME=postal
+# export POSTAL_CFG_URL=https://storage.googleapis.com/postal-app-0/garrett.properties.encrypted
+# export POSTAL_CFG_MOD=wxNsuvBjVtNZidUjhfaCpaDGr9GyMx
+export POSTAL_LOCAL_CONFIG_FILE=~/local.properties
+export JAVA_HOME=$(/usr/libexec/java_home)
+# export LOCAL_PERMISSIONS="YES"
+# export LOCAL_PERMISSIONS_DIRECTORY="/Users/garrettwayne/src/postalio/permissions/data"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+function chpwd() {
+  echo -ne "\033]0;${PWD##*/}\007"
+}
+
+function precmd() {
+  echo -ne "\033]0;${PWD##*/}\007"
+}
