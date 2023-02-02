@@ -21,6 +21,7 @@ brew 'yarn'
 brew 'withgraphite/tap/graphite'
 
 # Apps
+cask "atom"
 cask 'brave-browser'
 cask 'docker'
 cask 'dropbox'
