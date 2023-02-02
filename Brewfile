@@ -58,7 +58,6 @@ cask 'zoom'
 # cask 'font-source-serif-pro'
 
 # Mac App Store
-# mas 'Byword', id: 420212497
 mas 'Lockdown', id: 1483255076
 mas 'Brother iPrint&Scan', id: 1193539993
 mas 'Developer', id: 640199958
