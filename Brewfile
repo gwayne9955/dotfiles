@@ -24,7 +24,7 @@ brew 'withgraphite/tap/graphite'
 cask "atom"
 cask 'brave-browser'
 cask 'docker'
-cask 'dropbox'
+# cask 'dropbox'
 cask 'figma'
 cask 'firefox'
 cask 'gifox'
