@@ -23,7 +23,7 @@ brew 'yarn'
 brew 'graphite'
 
 # Apps
-cask "atom"
+# cask "atom" # No longer supported :(
 cask 'brave-browser'
 cask 'docker'
 # cask 'dropbox'
