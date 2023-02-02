@@ -45,7 +45,7 @@ brew 'wget'
 brew 'node'
 brew 'redis'
 brew 'yarn'
-brew 'graphite'
+brew 'withgraphite/tap/graphite'
 
 # Apps
 # cask '1password'
