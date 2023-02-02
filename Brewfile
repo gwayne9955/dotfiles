@@ -33,12 +33,10 @@ cask 'google-chrome'
 cask 'gpg-suite'
 cask 'intellij-idea-ce'
 cask 'iterm2'
-cask 'lockdown'
 cask 'loom'
 cask 'mimestream'
 cask 'mongodb-compass'
 cask 'postman'
-cask 'slack'
 cask 'spotify'
 cask 'the-unarchiver'
 cask 'tuple'
@@ -61,10 +59,16 @@ cask 'zoom'
 
 # Mac App Store
 # mas 'Byword', id: 420212497
-# mas 'Giphy Capture', id: 668208984
-# mas 'Keynote', id: 409183694
-# mas 'Numbers', id: 409203825
-# mas 'Spark', id: 1176895641
-# mas 'Speedtest', id: 1153157709
-# mas 'Things', id: 904280696
-# mas 'Tweetbot', id: 1384080005
+mas 'Lockdown', id: 1483255076
+mas 'Brother iPrint&Scan', id: 1193539993
+mas 'Developer', id: 640199958
+mas 'Honey', id: 1472777122
+mas 'Magnet', id: 441258766
+mas 'Grammarly for Safari', id: 1462114288
+mas 'GIPHY CAPTURE', id: 668208984
+mas 'Be Focused Pro', id: 961632517
+mas 'AdBlock Pro', id: 1018301773
+mas 'Speedtest', id: 1153157709
+mas 'Xcode', id: 497799835
+mas 'Bear', id: 1091189122
+mas 'Slack, id: 803453959
