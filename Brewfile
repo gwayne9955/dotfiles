@@ -10,7 +10,7 @@ brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'mackup'
-brew install 'clintmod/formulas/macprefs'
+brew 'clintmod/formulas/macprefs'
 brew 'mas' # Mac App Store manager
 brew 'wget'
 
