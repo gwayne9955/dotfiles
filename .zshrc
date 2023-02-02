@@ -115,9 +115,6 @@ if [ -f '/Users/garrettwayne/Documents/google-cloud-sdk/path.zsh.inc' ]; then . 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/garrettwayne/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/garrettwayne/Documents/google-cloud-sdk/completion.zsh.inc'; fi
 
-# export COMPOSE_PROJECT_NAME=postal
-# export POSTAL_CFG_URL=https://storage.googleapis.com/postal-app-0/garrett.properties.encrypted
-# export POSTAL_CFG_MOD=wxNsuvBjVtNZidUjhfaCpaDGr9GyMx
 export POSTAL_LOCAL_CONFIG_FILE=~/local.properties
 export JAVA_HOME=$(/usr/libexec/java_home)
 # export LOCAL_PERMISSIONS="YES"
