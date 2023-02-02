@@ -70,4 +70,4 @@ mas 'AdBlock Pro', id: 1018301773
 mas 'Speedtest', id: 1153157709
 mas 'Xcode', id: 497799835
 mas 'Bear', id: 1091189122
-mas 'Slack, id: 803453959
+mas 'Slack', id: 803453959
