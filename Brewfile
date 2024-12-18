@@ -4,13 +4,15 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
+tap 'clintmod/formulas'
+tap 'withgraphite/tap'
 
 # Binaries
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'mackup'
-brew 'clintmod/formulas/macprefs'
+brew 'macprefs'
 brew 'mas' # Mac App Store manager
 brew 'wget'
 
@@ -18,10 +20,10 @@ brew 'wget'
 brew 'node'
 brew 'redis'
 brew 'yarn'
-brew 'withgraphite/tap/graphite'
+brew 'graphite'
 
 # Apps
-# cask "atom"
+# cask "atom" # No longer supported :(
 cask 'brave-browser'
 cask 'docker'
 # cask 'dropbox'
