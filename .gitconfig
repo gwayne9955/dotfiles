@@ -7,12 +7,7 @@
 	default = current
 [core]
 	excludesfile = /Users/garrettwayne/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+
 [commit]
 	template = /Users/garrettwayne/.stCommitMsg
 [filter "lfs"]
@@ -27,3 +22,7 @@
 	undo = reset --soft HEAD~1
 [pull]
 	rebase = false
+
+# [blame]
+# 	ignoreRevsFile = .git-blame-ignore-revs
+# 	markUnblamableLines = true

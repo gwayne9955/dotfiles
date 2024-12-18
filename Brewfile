@@ -21,14 +21,14 @@ brew 'yarn'
 brew 'withgraphite/tap/graphite'
 
 # Apps
-cask "atom"
+# cask "atom"
 cask 'brave-browser'
 cask 'docker'
 # cask 'dropbox'
 cask 'figma'
 cask 'firefox'
-cask 'gifox'
-cask 'github'
+# cask 'gifox'
+# cask 'github'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'intellij-idea-ce'
@@ -38,11 +38,11 @@ cask 'mimestream'
 cask 'mongodb-compass'
 cask 'postman'
 cask 'spotify'
-cask 'the-unarchiver'
-cask 'tuple'
+# cask 'tuple'
 cask 'visual-studio-code'
 cask 'windscribe'
-cask 'zoom'
+# cask 'zoom'
+cask 'sublime-text'
 
 # Quicklook
 # cask 'qlmarkdown'
@@ -58,16 +58,17 @@ cask 'zoom'
 # cask 'font-source-serif-pro'
 
 # Mac App Store
-mas 'Lockdown', id: 1483255076
+# mas 'Lockdown', id: 1483255076
 mas 'Brother iPrint&Scan', id: 1193539993
 mas 'Developer', id: 640199958
-mas 'Honey', id: 1472777122
 mas 'Magnet', id: 441258766
 mas 'Grammarly for Safari', id: 1462114288
-mas 'GIPHY CAPTURE', id: 668208984
+# mas 'GIPHY CAPTURE', id: 668208984
 mas 'Be Focused Pro', id: 961632517
 mas 'AdBlock Pro', id: 1018301773
 mas 'Speedtest', id: 1153157709
 mas 'Xcode', id: 497799835
-mas 'Bear', id: 1091189122
+# mas 'Bear', id: 1091189122
 mas 'Slack', id: 803453959
+mas 'Canary Mail App', id: 1236045954
+mas 'The Unarchiver', id: 425424353

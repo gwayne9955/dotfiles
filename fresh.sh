@@ -15,9 +15,9 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-# rm -rf $HOME/.zshrc
-# mv $HOME/.dotfiles/.zshrc $HOME/.zshrc
+# Removes .zshrc from $HOME (if it exists) and copies the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+cp $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
@@ -36,7 +36,7 @@ ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 # source $DOTFILES/.macos
 
 # Restore from mackup
-# mackup restore
+mackup restore
 
 # Restore from macprefs
-# macprefs restore
+macprefs restore
